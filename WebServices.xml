@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--自动化测试web services接口定义-->
+<webService>
+  <service url="http://ip:8001/Service/FriendsService.asmx">
+    <method name="AddFriend">
+      <param>
+        <userId type="int">353</userId>
+        <SessionKey type="string">-884070913</SessionKey>
+        <childId type="int">417</childId>
+        <callName type="string">半自动化测试程序</callName>
+        <phoneNum type="string">136710000000</phoneNum>
+        <shortNum type="string">123456</shortNum>
+        <imageIndex type="int">1</imageIndex>
+        <friendType type="int">1</friendType>
+      </param>
+    </method>
+    <method name="FriendList">
+      <param>
+        <userId type="int">353</userId>
+        <SessionKey type="string">-884070913</SessionKey>
+        <childId type="int">417</childId>
+      </param>
+    </method>
+    <method name="UpdateFriend">
+      <param>
+         <userId type="int">353</userId>
+        <SessionKey type="string">-884070913</SessionKey>
+        <childId type="int">417</childId>
+        <id type="int">63</id>
+        <callName type="string">半自动化测试程序更新</callName>
+        <phoneNum type="string">136710000000</phoneNum>
+        <shortNum type="string">123456</shortNum>
+        <imageIndex type="int">1</imageIndex>
+        <friendType type="int">1</friendType>
+      </param>
+    </method>
+    <method name="DeleteFriend">
+      <param>
+        <userId type="int">353</userId>
+        <SessionKey type="string">-884070913</SessionKey>
+        <childId type="int">417</childId>
+        <id type="int"></id>
+        <friendType type="int">1</friendType>
+      </param>
+    </method>
+  </service>
+
+  <service url="http://ip:8001/Service/ChildrenService.asmx">
+    <method name="FriendList">
+      <param>
+        <userId type="int">353</userId>
+        <SessionKey type="string">-884070913</SessionKey>
+      </param>
+    </method>
+  </service>
+  
+</webService>
